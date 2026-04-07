@@ -76,12 +76,14 @@ L.control.layers(baseMaps).addTo(map);
 
 
 // Make a simple circle
-var circle = L.circle([39.983219999796114, -75.15256557830536], {
+var circle = L.circle([-71.11538212964095,
+          42.37752450443634], {
     color: 'red',
     fillColor: '#f03',
     fillOpacity: 0.5,
     radius: 5
 }).addTo(map);
+.bindPopup ("Bauer Cafe!");
 
 // Make a shape
 var polygon = L.polygon([
