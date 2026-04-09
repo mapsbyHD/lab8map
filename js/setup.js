@@ -14,8 +14,6 @@ L.Control.geocoder({
   })
   .addTo(map);
 
-map.locate({ setView: true, maxZoom: 18 });
-
 map.on('locationfound', function(e) {
   L.marker(e.latlng).addTo(map)
     .bindPopup("You are here").openPopup();
@@ -58,7 +56,7 @@ var EsriSat = L.tileLayer(
 );
 
 // Default basemap
-Satellite.addTo(map);
+CartoLight.addTo(map);
 
 // You can add or remove basemaps here. A button will appear top right of map to toggle.
 var baseMaps = {
