@@ -13,7 +13,7 @@
 .sidebar {
   position: absolute;
   left: 0px;
-  width: 350px;
+  width: 250px;
   top: 0;
   bottom: 0;
   overflow-y: auto;
@@ -80,9 +80,15 @@
 
 //Load in geojson
     var austin =   L.geoJSON(austin, {
-          style: myStyle
-        }).openPopup(function (layer) {
-       return "" + layer.feature.properties.name
+          style: myStyle,
+		onEachFeature: function(feature, layer) {
+			layer.bindPopup(feature.properties.name);
+
+			layer.on('add', function() {
+				layer.openPopup();
+			});
+		}
+        
     }).addTo(map).bringToBack();
 
 
