@@ -12,7 +12,7 @@ L.Control.geocoder({
     map.fitBounds(e.geocode.bbox);
   })
   .addTo(map);
-});
+);
 
 //Scale bar
 L.control.scale().addTo(map);
