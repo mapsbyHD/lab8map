@@ -1,7 +1,7 @@
 var map = L.map('map', {
   center: [-71.12251278286324,
           42.376577841044764],
-  zoom: 30,
+  zoom: 8,
 });
 
 
@@ -70,7 +70,7 @@ L.control.layers(baseMaps).addTo(map);
 
 // Make a simple circle
 var circle = L.circle([-71.12266472959821,
-          42.373113451801515]), 
+          42.373113451801515], 
 { color: 'red',
     fillColor: '#f03',
     fillOpacity: 0.5,
