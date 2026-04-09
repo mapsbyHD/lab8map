@@ -1,6 +1,6 @@
 var map = L.map('map', {
-  center: [42.375460678547256,
-           -71.11673338959217],
+  center: [-71.12251278286324,
+          42.376577841044764],
   zoom: 18,
 });
 
@@ -74,7 +74,7 @@ var circle = L.circle([-71.12266472959821,
     color: 'red',
     fillColor: '#f03',
     fillOpacity: 0.5,
-    radius: 5
+    radius: 10
 }).addTo(map).bindPopup ("Flour Bakery + Cafe");
 
 // Make a shape
