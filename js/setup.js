@@ -1,6 +1,6 @@
 var map = L.map('map', {
-  center: [-71.11692842894011,
-          42.375845772255815],
+  center: [42.375460678547256,
+           -71.11673338959217],
   zoom: 18,
 });
 
@@ -13,12 +13,6 @@ L.Control.geocoder({
     map.fitBounds(e.geocode.bbox);
   })
   .addTo(map);
-
-map.on('locationfound', function(e) {
-  L.marker(e.latlng).addTo(map)
-    .bindPopup("You are here").openPopup();
-});
-
 
 //Scale bar
 L.control.scale().addTo(map);
