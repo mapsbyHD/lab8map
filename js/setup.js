@@ -1,6 +1,5 @@
 var map = L.map('map', {
-  center: [42.376577841044764,
-           -71.12251278286324],
+  center: [42.376577841044764, -71.12251278286324],
   zoom: 8,
 });
 
@@ -13,6 +12,7 @@ L.Control.geocoder({
     map.fitBounds(e.geocode.bbox);
   })
   .addTo(map);
+});
 
 //Scale bar
 L.control.scale().addTo(map);
@@ -69,12 +69,11 @@ L.control.layers(baseMaps).addTo(map);
 
 
 // Make a simple circle
-var circle = L.circle([42.373113451801515, 
-                       -71.12266472959821], 
-{ color: 'red',
-    fillColor: '#f03',
-    fillOpacity: 0.5,
-    radius: 10
+var circle = L.circle([42.373113451801515, -71.12266472959821], {
+  color: 'red',
+  fillColor: '#f03',
+  fillOpacity: 0.5,
+  radius: 10
 }).addTo(map).bindPopup ("Flour Bakery + Cafe");
 
 // Make a shape
