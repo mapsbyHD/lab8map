@@ -1,5 +1,15 @@
-var austin = {"type":"FeatureCollection","features":[{"type":"Feature","properties":{"name":"Austin Hall","event":"GeoTag"},"geometry":{"coordinates":[[[
-          [
+var austin = {
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Austin Hall",
+        "event": "GeoTag"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
             [
               -71.11918898471569,
               42.376935170566014
