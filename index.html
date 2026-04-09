@@ -81,7 +81,7 @@
 //Load in geojson
     var austin =   L.geoJSON(austin, {
           style: myStyle
-        }).bindPopup(function (layer) {
+        }).openPopup(function (layer) {
        return "" + layer.feature.properties.name
     }).addTo(map).bringToBack();
 
