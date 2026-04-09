@@ -82,8 +82,7 @@ var circle = L.circle([-71.122385,
     fillColor: '#f03',
     fillOpacity: 0.5,
     radius: 5
-}).addTo(map);
-.bindPopup ("Flour Bakery + Cafe");
+}).addTo(map).bindPopup ("Flour Bakery + Cafe");
 
 // Make a shape
 var polygon = L.polygon([
