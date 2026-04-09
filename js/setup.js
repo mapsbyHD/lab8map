@@ -18,14 +18,15 @@ L.Control.geocoder({
 L.control.scale().addTo(map);
 
 // --- Basemap options ---
-var Satellite = L.tileLayer(
-  'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
-  { attribution: 'Tiles © Esri' }
-);
 
 var CartoLight = L.tileLayer(
   'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png',
   { attribution: '&copy; OpenStreetMap contributors & CARTO' }
+);
+
+var Satellite = L.tileLayer(
+  'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
+  { attribution: 'Tiles © Esri' }
 );
 
 var CartoDark = L.tileLayer(
@@ -68,8 +69,8 @@ L.control.layers(baseMaps).addTo(map);
 
 
 // Make a simple circle
-var circle = L.circle([42.373028,
-                       -71.122385], {
+var circle = L.circle([-71.12266472959821,
+          42.373113451801515]), {
     color: 'red',
     fillColor: '#f03',
     fillOpacity: 0.5,
